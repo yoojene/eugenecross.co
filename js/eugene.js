@@ -15,9 +15,12 @@ function Pause() {
   document.getElementById("thevideo").style.display="none";
   myVideo.pause(); 
 }
+
 function Play() {
   document.getElementById("profilecircle").style.display="none";
   document.getElementById("thevideo").style.display="";
-if (myVideo.paused) 
-  myVideo.play();     
+  if (myVideo.paused){
+    myVideo.play();   
+  } 
+
 }   

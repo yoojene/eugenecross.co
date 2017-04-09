@@ -9,9 +9,9 @@ var pkg = require('./package.json');
 
 // Set the banner content
 var banner = ['/*!\n',
-    ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-    ' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-    ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n',
+    ' * eugenecross.co - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
+    ' * Copyright 2017-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
+    // ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n',
     ' */\n',
     ''
 ].join('');
@@ -27,7 +27,7 @@ gulp.task('less_Free', function() {
         }))
 });
 
-gulp.task('less_Ec', function() {
+gulp.task('less', function() {
     return gulp.src('less/eugene.less')
         .pipe(less())
         .pipe(header(banner, { pkg: pkg }))
@@ -49,7 +49,7 @@ gulp.task('minify-css_Free', ['less_Free'], function() {
 });
 
 // Minify compiled CSS
-gulp.task('minify-css_Ec', ['less_Ec'], function() {
+gulp.task('minify-css', ['less'], function() {
     return gulp.src('css/eugene.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
@@ -61,7 +61,7 @@ gulp.task('minify-css_Ec', ['less_Ec'], function() {
 
 // Minify JS
 gulp.task('minify-js', function() {
-    return gulp.src('js/freelancer.js')
+    return gulp.src('js/eugene.js')
         .pipe(uglify())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(rename({ suffix: '.min' }))
@@ -91,7 +91,7 @@ gulp.task('copy', function() {
 })
 
 // Run everything
-gulp.task('default', ['less_Free', 'less_Ec', 'minify-css_Free', 'minify-css_Ec', 'minify-js', 'copy']);
+gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -103,9 +103,9 @@ gulp.task('browserSync', function() {
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'less_Free', 'less_Ec', 'minify-css_Free', 'minify-css_Ec', 'minify-js'], function() {
-    gulp.watch('less/*.less', ['less_Free', 'less_Ec']);
-    gulp.watch('css/*.css', ['minify-css_Free', 'minify-css_Ec']);
+gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() {
+    gulp.watch('less/*.less', ['less']);
+    gulp.watch('css/*.css', ['minify-css']);
     gulp.watch('js/*.js', ['minify-js']);
     // Reloads the browser whenever HTML or JS files change
     gulp.watch('*.html', browserSync.reload);

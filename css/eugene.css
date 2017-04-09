@@ -1,7 +1,6 @@
 /*!
- * Start Bootstrap - Freelancer v3.3.7+1 (http://startbootstrap.com/template-overviews/freelancer)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ * eugenecross.co - Eugene Cross dot co v1.0.0 (http://www.eugenecross.co)
+ * Copyright 2017-2017 Eugene Cross
  */
 @media (min-height: 959px) {
   .eugene-background-image {
@@ -53,6 +52,7 @@ header .intro-text .skills {
   height: 20rem;
   background-size: cover;
   margin: auto;
+  display: none;
 }
 .profileOut {
   width: 30rem;
@@ -69,7 +69,7 @@ header .intro-text .skills {
   margin: auto;
 }
 .eugene-background-image {
-  background-image: url("/img/IMG_7673R.jpg");
+  background-image: url("/img/IMG_7673.jpg");
   transition: background-image 2s;
   background-size: cover;
   width: auto;
@@ -92,6 +92,12 @@ a.active {
 }
 .genox {
   content: url("/img/GenoxLogoWhite.png");
+}
+.genox:hover,
+.genox:focus,
+.genox:active,
+.genox.active {
+  content: url("/img/GenoxLogoBW.png");
 }
 .eugene-social-button:hover,
 .eugene-social-button:focus,
