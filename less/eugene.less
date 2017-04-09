@@ -1,0 +1,166 @@
+@import "variables.less";
+@import "mixins.less";
+
+@media (min-height: 959px) {
+	.eugene-background-image {
+		height: 100rem;
+	}
+}
+
+body {
+	font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	overflow-x: hidden;
+}
+
+
+
+header {
+	text-align: center;
+	background: #000000;
+	color: white;
+	.container {
+		padding-top: 100px;
+		padding-bottom: 50px;
+	}
+	img {
+		display: block;
+		margin: 0 auto 20px;
+	}
+	.intro-text {
+		.name {
+			display: block;
+			font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 2em;
+		}
+		.skills {
+			font-size: 1.25em;
+			font-weight: 300;
+		}
+	}
+}
+
+@media(min-width:768px) {
+	header {
+		.container {
+			padding-top: 200px;
+			padding-bottom: 100px;
+		}
+		.intro-text {
+			.name {
+				font-size: 4.75em;
+			}
+			.skills {
+				font-size: 1.75em;
+			}
+		}
+	}
+}
+	
+.thevideo {
+  	width: 35rem;
+    height: 20rem;
+    background-size: cover;
+    margin: auto;
+}
+.profileOut {
+    width: 30rem;
+    height: 30rem;
+	background-image: url("/img/IMG_7783.jpg");
+	background-size: cover;
+	margin: auto;
+	// border: solid white 100px;
+}
+
+.profileIn {
+
+    width: 30rem;
+    height: 30rem;
+	background-image: url("/img/IMG_6602.jpg");
+	// background-image: url("http://giphy.com/gifs/IC5Tm6zVcpFYY/html5");
+	background-size: cover;
+	margin: auto;
+	// border: solid white 2px;
+}
+
+.eugene-background-image {
+
+	// animation-name: bg-show;
+	// animation-fill-mode: forwards;
+  	// animation-delay: 2s;
+	background-image: url("/img/IMG_7673R.jpg");
+	transition: background-image 2s;
+	background-size: cover;
+    width: auto;
+    // height: 100rem;
+
+
+}
+
+@keyframes bg-show {
+	0% 		{opacity: 0;}
+	100% 	{opacity: 1;}
+
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+	color: white;
+	outline: none;
+}
+
+.genox {
+    content: url("/img/GenoxLogoWhite.png");
+    &:hover,
+	&:focus,
+	&:active,
+	&.active {
+        content: url("/img/GenoxLogoBW.png")
+	}
+}
+
+.eugene-social-button {
+   &:hover,
+	&:focus,
+	&:active,
+	&.active {
+		color: black;
+		background: white;
+		border: solid 2px white;
+	}
+}
+
+// Buttons
+.btn-outline {
+	color: white;
+	font-size: 20px;
+	border: solid 2px white;
+	background: transparent;
+	transition: all 0.3s ease-in-out;
+	margin-top: 15px;
+	&:hover,
+	&:focus,
+	&:active,
+	&.active {
+		// color: @theme-success;
+		color: black;
+		background: white;
+		border: solid 2px white;
+	}
+}
+
+
+.btn-social {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	border: 2px solid white;
+	border-radius: 100%;
+	text-align: center;
+	font-size: 20px;
+	line-height: 45px;
+}

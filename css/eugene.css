@@ -1,0 +1,129 @@
+/*!
+ * Start Bootstrap - Freelancer v3.3.7+1 (http://startbootstrap.com/template-overviews/freelancer)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+@media (min-height: 959px) {
+  .eugene-background-image {
+    height: 100rem;
+  }
+}
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+header {
+  text-align: center;
+  background: #000000;
+  color: white;
+}
+header .container {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+header img {
+  display: block;
+  margin: 0 auto 20px;
+}
+header .intro-text .name {
+  display: block;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2em;
+}
+header .intro-text .skills {
+  font-size: 1.25em;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  header .container {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+  header .intro-text .name {
+    font-size: 4.75em;
+  }
+  header .intro-text .skills {
+    font-size: 1.75em;
+  }
+}
+.thevideo {
+  width: 35rem;
+  height: 20rem;
+  background-size: cover;
+  margin: auto;
+}
+.profileOut {
+  width: 30rem;
+  height: 30rem;
+  background-image: url("/img/IMG_7783.jpg");
+  background-size: cover;
+  margin: auto;
+}
+.profileIn {
+  width: 30rem;
+  height: 30rem;
+  background-image: url("/img/IMG_6602.jpg");
+  background-size: cover;
+  margin: auto;
+}
+.eugene-background-image {
+  background-image: url("/img/IMG_7673R.jpg");
+  transition: background-image 2s;
+  background-size: cover;
+  width: auto;
+}
+@keyframes bg-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: white;
+  outline: none;
+}
+.genox {
+  content: url("/img/GenoxLogoWhite.png");
+}
+.eugene-social-button:hover,
+.eugene-social-button:focus,
+.eugene-social-button:active,
+.eugene-social-button.active {
+  color: black;
+  background: white;
+  border: solid 2px white;
+}
+.btn-outline {
+  color: white;
+  font-size: 20px;
+  border: solid 2px white;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+}
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+  color: black;
+  background: white;
+  border: solid 2px white;
+}
+.btn-social {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border: 2px solid white;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 45px;
+}
