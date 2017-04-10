@@ -2,11 +2,6 @@
  * eugenecross.co - Eugene Cross dot co v1.0.0 (http://www.eugenecross.co)
  * Copyright 2017-2017 Eugene Cross
  */
-@media (min-height: 826px) {
-  .eugene-background-image {
-    height: 100rem;
-  }
-}
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
@@ -132,4 +127,29 @@ a.active {
   text-align: center;
   font-size: 20px;
   line-height: 45px;
+}
+@media (min-height: 826px) and (min-width: 1500px) {
+  .eugene-background-image {
+    height: 100rem;
+  }
+  a,
+  a:hover,
+  a:focus,
+  a:active,
+  a.active {
+    color: black;
+    outline: none;
+  }
+  header {
+    color: black;
+  }
+  header .skills {
+    color: black;
+  }
+  .btn-outline {
+    color: black;
+  }
+  .btn-social {
+    border: 2px solid black;
+  }
 }
