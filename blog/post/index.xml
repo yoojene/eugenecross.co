@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Post-rsses on Blog</title>
+    <link>http://www.eugenecross.co/blog/post/index.xml</link>
+    <description>Recent content in Post-rsses on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Eugene Cross All rights reserved.</copyright>
+    <lastBuildDate>Sun, 23 Apr 2017 00:27:16 +0100</lastBuildDate>
+    <atom:link href="http://www.eugenecross.co/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hello, World</title>
+      <link>http://www.eugenecross.co/blog/post/first-post/</link>
+      <pubDate>Sun, 23 Apr 2017 00:27:16 +0100</pubDate>
+      
+      <guid>http://www.eugenecross.co/blog/post/first-post/</guid>
+      <description>&lt;p&gt;Hello there, yes I&amp;rsquo;ve finally gotten round to putting my thoughts on the Interweb and have starting a blog.  Only been doing this IT thing for what 13 years professionally and this has been a long standing &amp;lsquo;to do&amp;rsquo;, some might say it&amp;rsquo;s about time.&lt;/p&gt;
+
+&lt;p&gt;The main reason for my newly found impetus is to blog more about my work, the technologies I use and the projects I work on.  However, to mix it up  I expect I will be musing about my other non coding interests from time to time.&lt;/p&gt;
+
+&lt;p&gt;Well if you&amp;rsquo;ve continued to read this so far, then thanks and long may it continue!  Feel free to get in touch with me on the usual channels :-)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
