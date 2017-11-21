@@ -24,3 +24,13 @@ function Play() {
   } 
 
 }   
+
+$("vid").mouseover(function(){
+  console.log('jquery over')
+  document.getElementById("profilecircle").style.display = "none";
+  document.getElementById("thevideo").style.display = "";
+  if (myVideo.paused) {
+    myVideo.play();
+  } 
+
+})

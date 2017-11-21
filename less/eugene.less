@@ -46,6 +46,7 @@ header {
 			}
 			.skills {
 				font-size: 1.75em;
+				text-decoration: none;
 			}
 		}
 	}
@@ -103,17 +104,21 @@ a:active,
 a.active {
 	color: @theme-white;
 	outline: none;
+	text-decoration: none;
 }
 
 .genox {
-    content: url("/img/GenoxLogoWhite.png");
-    &:hover,
+	width: 4rem;
+	padding-top: 0.6rem;
+	content: url("/img/GenoxLogoWhite.png");
+  &:hover,
 	&:focus,
 	&:active,
 	&.active {
-        content: url("/img/GenoxLogoBW.png")
+    content: url("/img/GenoxLogoBW.png")
 	}
 }
+
 
 .eugene-social-button {
    &:hover,
@@ -138,7 +143,7 @@ a.active {
 	&:focus,
 	&:active,
 	&.active {
-		color: @theme-buttons;
+		color: @theme-black;
 		background: white;
 		border: solid 2px white;
 	}
@@ -155,7 +160,6 @@ a.active {
 	line-height: 45px;
 }
 
-
 @media (min-height: 826px) and (min-width: 1500px) {
 	.eugene-background-image {
 		height: 100rem;
@@ -166,11 +170,12 @@ a.active {
 	a:focus,
 	a:active,
 	a.active {
-	color: @theme-black;
-	outline: none;
-}
+		color: @theme-black;
+		outline: none;
+		text-decoration: none;
+	}
 
-		header {
+	header {
 		color:  @theme-black;
 			.skills {
 				color:  @theme-black;
@@ -179,10 +184,21 @@ a.active {
 
 	.btn-outline {
 	color: @theme-black;
-}
+	}
 
-.btn-social {
-	border: 2px solid black;
+	.btn-social {
+		border: 2px solid black;
+	}
+	.genox {
+		width: 4rem;
+		padding-top: 0.6rem;
+		content: url("/img/GenoxLogoBlack.png");
+		&:hover,
+		&:focus,
+		&:active,
+		&.active {
+			content: url("/img/GenoxLogoBW.png")
+		}
 }
 
 

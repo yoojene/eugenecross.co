@@ -40,6 +40,7 @@ header .intro-text .skills {
   }
   header .intro-text .skills {
     font-size: 1.75em;
+    text-decoration: none;
   }
 }
 .thevideo {
@@ -84,8 +85,11 @@ a:active,
 a.active {
   color: white;
   outline: none;
+  text-decoration: none;
 }
 .genox {
+  width: 4rem;
+  padding-top: 0.6rem;
   content: url("/img/GenoxLogoWhite.png");
 }
 .genox:hover,
@@ -139,6 +143,7 @@ a.active {
   a.active {
     color: black;
     outline: none;
+    text-decoration: none;
   }
   header {
     color: black;
@@ -151,5 +156,16 @@ a.active {
   }
   .btn-social {
     border: 2px solid black;
+  }
+  .genox {
+    width: 4rem;
+    padding-top: 0.6rem;
+    content: url("/img/GenoxLogoBlack.png");
+  }
+  .genox:hover,
+  .genox:focus,
+  .genox:active,
+  .genox.active {
+    content: url("/img/GenoxLogoBW.png");
   }
 }
