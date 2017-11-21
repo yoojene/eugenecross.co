@@ -96,7 +96,7 @@ a.active {
 .genox:focus,
 .genox:active,
 .genox.active {
-  content: url("/img/GenoxLogoBW.png");
+  content: url("/img/GenoxLogoBlack.png");
 }
 .eugene-social-button:hover,
 .eugene-social-button:focus,
@@ -166,6 +166,6 @@ a.active {
   .genox:focus,
   .genox:active,
   .genox.active {
-    content: url("/img/GenoxLogoBW.png");
+    content: url("/img/GenoxLogoBlack.png");
   }
 }
