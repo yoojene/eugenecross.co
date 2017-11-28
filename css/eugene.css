@@ -12,8 +12,8 @@ header {
   color: white;
 }
 header .container {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 250px;
+  padding-bottom: 60px;
 }
 header img {
   display: block;
@@ -29,6 +29,22 @@ header .intro-text .name {
 header .intro-text .skills {
   font-size: 1.25em;
   font-weight: 300;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.social-icon-list {
+  display: inline-flex;
+  flex-direction: row;
+  line-height: 30px;
+  text-align: center;
+}
+.social-icon {
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 0;
 }
 @media (min-width: 768px) {
   header .container {
@@ -68,7 +84,6 @@ header .intro-text .skills {
   background-image: url("/img/IMG_7673.jpg");
   transition: background-image 2s;
   background-size: cover;
-  width: auto;
 }
 @keyframes bg-show {
   0% {
