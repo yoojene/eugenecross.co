@@ -1,6 +1,6 @@
 /*!
  * eugenecross.co - Eugene Cross dot co v1.0.0 (http://www.eugenecross.co)
- * Copyright 2017-2017 Eugene Cross
+ * Copyright 2017-2019 Eugene Cross
  */
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -52,7 +52,7 @@ ul {
     padding-bottom: 100px;
   }
   header .intro-text .name {
-    font-size: 4.75em;
+    font-size: 7em;
   }
   header .intro-text .skills {
     font-size: 1.75em;
@@ -84,6 +84,7 @@ ul {
   background-image: url("/img/IMG_7673.jpg");
   transition: background-image 2s;
   background-size: cover;
+  height: 100vh;
 }
 @keyframes bg-show {
   0% {
@@ -148,9 +149,6 @@ a.active {
   line-height: 45px;
 }
 @media (min-height: 826px) and (min-width: 1500px) {
-  .eugene-background-image {
-    height: 100rem;
-  }
   a,
   a:hover,
   a:focus,
