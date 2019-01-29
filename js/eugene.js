@@ -8,22 +8,24 @@ function hoverOut() {
 
 }
 
-var myVideo=document.getElementById("thevideo"); 
+var myVideo = document.getElementById("thevideo"); 
 
-function Pause() { 
-  document.getElementById("profilecircle").style.display="";
-  document.getElementById("thevideo").style.display="none";
+
+console.log(myVideo);
+
+var baller = document.getElementById("baller");
+
+baller.addEventListener("mouseover", function() {
+  document.getElementById("profilecircle").style.display = "none";
+  document.getElementById("thevideo").style.display = "";
+  myVideo.play();
+} );
+
+myVideo.addEventListener("mouseleave", function()  {
+  document.getElementById("profilecircle").style.display = "";
+  document.getElementById("thevideo").style.display = "none";
   myVideo.pause(); 
-}
-
-function Play() {
-  document.getElementById("profilecircle").style.display="none";
-  document.getElementById("thevideo").style.display="";
-  if (myVideo.paused){
-    myVideo.play();   
-  } 
-
-}   
+})
 
 $("vid").mouseover(function(){
   console.log('jquery over')

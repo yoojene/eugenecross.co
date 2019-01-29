@@ -46,36 +46,19 @@ ul {
   margin-left: 10px;
   padding: 0;
 }
-@media (min-width: 768px) {
-  header .container {
-    padding-top: 200px;
-    padding-bottom: 100px;
-  }
-  header .intro-text .name {
-    font-size: 7em;
-  }
-  header .intro-text .skills {
-    font-size: 1.75em;
-    text-decoration: none;
-  }
-}
 .thevideo {
-  width: 35rem;
-  height: 20rem;
-  background-size: cover;
-  margin: auto;
-  display: none;
+  border-radius: 40%;
 }
 .profileOut {
-  width: 30rem;
-  height: 30rem;
+  width: 20rem;
+  height: 20rem;
   background-image: url("/img/IMG_7783.jpg");
   background-size: cover;
   margin: auto;
 }
 .profileIn {
-  width: 30rem;
-  height: 30rem;
+  width: 20rem;
+  height: 20rem;
   background-image: url("/img/IMG_6602.jpg");
   background-size: cover;
   margin: auto;
@@ -180,5 +163,26 @@ a.active {
   .genox:active,
   .genox.active {
     content: url("/img/GenoxLogoBlack.png");
+  }
+}
+@media (min-width: 768px) {
+  header .container {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+  header .intro-text .name {
+    font-size: 7em;
+  }
+  header .intro-text .skills {
+    font-size: 1.75em;
+    text-decoration: none;
+  }
+  .profileOut {
+    width: 30rem;
+    height: 30rem;
+  }
+  .profileIn {
+    width: 30rem;
+    height: 30rem;
   }
 }
