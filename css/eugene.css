@@ -187,6 +187,6 @@ a.active {
     height: 30rem;
   }
   .thevideo {
-    border-radius: 40%;
+    width: 50rem;
   }
 }
