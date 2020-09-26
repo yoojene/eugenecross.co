@@ -1,15 +1,16 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
+import pic01 from '../images/me.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
 
 class Main extends React.Component {
   render() {
+    console.log(this.props);
     let close = (
       <div
         className="close"
-        onClick={() => {
+        onClick={() =>   {
           this.props.onCloseArticle()
         }}
       ></div>
@@ -33,25 +34,24 @@ class Main extends React.Component {
             <img src={pic01} alt="" />
           </span>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
+            Hi I'm Eugene!  Thanks for stopping by.  
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+            I'm a web and mobile app 
+            developer working in the healthcare industry.  
+
+            I work mostly with TypeScript/JavaScript but I also dabble in Python, Swift and Java.
+            
           </p>
+          <p>
+            You can see some of my work <a href="#" onClick={() => {
+              this.props.onChangeArticle('work');
+            }}>here</a>.         
+          </p>
+          <p>
+            Outside of work my interests include running, basketball and modernist architecture.
+          </p>
+          
           {close}
         </article>
 
@@ -176,7 +176,8 @@ Main.propTypes = {
   route: PropTypes.object,
   article: PropTypes.string,
   articleTimeout: PropTypes.bool,
-  onCloseArticle: PropTypes.func,
+  onOpenArticle: PropTypes.func,
+  onChangeArticle: PropTypes.func,
   timeout: PropTypes.bool,
   setWrapperRef: PropTypes.func.isRequired,
 }
