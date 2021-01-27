@@ -1,120 +1,22 @@
-import React from 'react'
-import Layout from '../components/layout'
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import App from '../components/App';
+import { headData } from '../mock/data';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../style/main.scss';
 
-import Header from '../components/Header'
-import Main from '../components/Main'
-import Footer from '../components/Footer'
+export default () => {
+  const { title, lang, description } = headData;
 
-class IndexPage extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      isArticleVisible: false,
-      timeout: false,
-      articleTimeout: false,
-      article: '',
-      loading: 'is-loading'
-    }
-    this.handleOpenArticle = this.handleOpenArticle.bind(this)
-    this.handleCloseArticle = this.handleCloseArticle.bind(this)
-    this.handleChangeArticle = this.handleChangeArticle.bind(this)
-    this.setWrapperRef = this.setWrapperRef.bind(this);
-    this.handleClickOutside = this.handleClickOutside.bind(this);
-  }
-
-  componentDidMount () {
-    this.timeoutId = setTimeout(() => {
-        this.setState({loading: ''});
-    }, 100);
-    document.addEventListener('mousedown', this.handleClickOutside);
-  }
-
-  componentWillUnmount () {
-    if (this.timeoutId) {
-        clearTimeout(this.timeoutId);
-    }
-    document.removeEventListener('mousedown', this.handleClickOutside);
-  }
-
-  setWrapperRef(node) {
-    this.wrapperRef = node;
-  }
-
-  async handleOpenArticle(article) {
-
-    this.setState({
-      isArticleVisible: !this.state.isArticleVisible,
-      article
-    })
-
-    setTimeout(() => {
-      this.setState({
-        timeout: !this.state.timeout
-      })
-    }, 325)
-
-    setTimeout(() => {
-      this.setState({
-        articleTimeout: !this.state.articleTimeout
-      })
-    }, 350)
-
-  }
-
-  async handleCloseArticle() {
-
-    this.setState({
-      articleTimeout: !this.state.articleTimeout
-    })
-    
-      this.setState({
-        timeout: !this.state.timeout
-      })
-    
-      this.setState({
-        isArticleVisible: !this.state.isArticleVisible,
-        article: ''
-      })
-  
-
-  }
-
-  async handleChangeArticle(article) {
-    await this.handleCloseArticle();
-    await this.handleOpenArticle(article);
-
-  }
-
-  handleClickOutside(event) {
-    if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
-      if (this.state.isArticleVisible) {
-        this.handleCloseArticle();
-      }
-    }
-  }
-
-  render() {
-    return (
-      <Layout location={this.props.location}>
-        <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
-          <div id="wrapper">
-            <Header onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
-            <Main
-              isArticleVisible={this.state.isArticleVisible}
-              timeout={this.state.timeout}
-              articleTimeout={this.state.articleTimeout}
-              article={this.state.article}
-              onCloseArticle={this.handleCloseArticle}
-              onChangeArticle={this.handleChangeArticle}
-              setWrapperRef={this.setWrapperRef}
-            />
-            <Footer timeout={this.state.timeout} />
-          </div>
-          <div id="bg"></div>
-        </div>
-      </Layout>
-    )
-  }
-}
-
-export default IndexPage
+  return (
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{title || 'Gatsby Simplefolio'}</title>
+        <html lang={lang || 'en'} />
+        <meta name="description" content={description || 'Gatsby Simplefolio'} />
+      </Helmet>
+      <App />
+    </>
+  );
+};
