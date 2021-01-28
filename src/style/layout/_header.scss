@@ -1,0 +1,13 @@
+#header {
+  .logo {
+    // border: red 1px solid;
+    left: 700%;
+    @include respond(phone) {
+      left:130%;
+    }
+  }
+
+  .container {
+    height: 50px; 
+  }
+}
