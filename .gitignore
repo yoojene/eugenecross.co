@@ -1,6 +1,6 @@
 .cache
 node_modules
 .vscode
-
+/examples
 /public
 .DS_Store
