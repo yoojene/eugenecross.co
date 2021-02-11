@@ -52,11 +52,23 @@ export const projectsData = [
   },
   {
     id: nanoid(),
+    img: 'AvailableBeauty_logo.png',
+    title: 'Available Beauty',
+    info: 'An app connecting stylists and other beauty professionals with potential clients.',
+    info2:
+      'Features include user authentication, geolocation tracking, push notifications, camera and photo library usage and in app purchases.',
+    info3: 'Built using Ionic, Angular, Firebase.',
+    url: 'https://www.availablebeauty.com/',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'breakroom_overview.png',
     title: 'Breakroom',
     info: 'A quit smoking app, taking users through their journey to giving up smoking.',
     info2:
-      'Features include login and registration, gamification through unlocking badges, a social feed and tracking progress on money saved.  Built using Ionic and Angular.',
+      'Features include login and registration, gamification through unlocking badges, a social feed and tracking progress on money saved.',
+    info3: 'Built using Ionic & Angular.',
     url: 'https://www.breakroom.com.au/',
     repo: '', // if no repo, the button will not show up
   },
@@ -66,7 +78,7 @@ export const projectsData = [
     title: 'Mi Guia',
     info:
       'A cancer treatment companion app, enabling patients to track exercise, moods, doctors appointments and set reminders.',
-    info2: 'Built using Ionic and Angular.',
+    info2: 'Built using Ionic & Angular.',
     url: 'https://play.google.com/store/apps/details?id=com.pfizer.ar.MiGuia',
     repo: '', // if no repo, the button will not show up
   },
