@@ -52,7 +52,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'AvailableBeauty_logo.png',
+    img: 'available_beauty_appstore.png',
     title: 'Available Beauty',
     info: 'An app connecting stylists and other beauty professionals with potential clients.',
     info2:
