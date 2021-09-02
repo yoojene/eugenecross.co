@@ -32,6 +32,16 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'rocketlawyer.png',
+    title: 'Rocket Lawyer',
+    info: 'Create legal documents & ask a question to a lawyer.',
+    info2:
+      'Reworked, refreshed and upgraded an Ionic 3 / Cordova app to Ionic 5 and increased the rating to 4+ stars',
+    url: 'https://apps.apple.com/us/app/rocket-lawyer-easy-legal-help/id605512447',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'pfizerpro.png',
     title: 'Pfizer HCP Portal',
     info: 'Main sales site for US healthcare professionals.',
