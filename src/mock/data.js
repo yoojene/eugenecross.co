@@ -84,6 +84,18 @@ export const projectsData = [
   },
   {
     id: nanoid(),
+    img: 'mibrance.png',
+    title: 'Mibrance',
+    info:
+      "A cancer treatment companion app, enabling tracking of symptoms, doctor's appointments and medication reminders.",
+    info2:
+      'Features include a calendar, notifications, multi language support and graphical reporting of symptoms over time with the ability to export to PDF.',
+    info3: 'Built using Ionic & Angular.',
+    url: 'https://apps.apple.com/be/app/mibrance/id1457076811',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'miguia.png',
     title: 'Mi Guia',
     info:
