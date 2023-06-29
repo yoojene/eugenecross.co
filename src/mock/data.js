@@ -32,6 +32,15 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'hostcomm-rva.png',
+    title: 'Hostcomm Remote Visual Assistance',
+    info: 'A remote video insepection web application used on desktop and mobile devices.',
+    info2: 'Architected and built on the MERN stack using the Twilio SDK hosted on AWS.',
+    url: 'https://www.hostcomm.co.uk/solutions/remote-visual-assistance',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'rocketlawyer.png',
     title: 'Rocket Lawyer',
     info: 'Create legal documents & ask a question to a lawyer.',
@@ -40,6 +49,7 @@ export const projectsData = [
     url: 'https://apps.apple.com/us/app/rocket-lawyer-easy-legal-help/id605512447',
     repo: '', // if no repo, the button will not show up
   },
+
   {
     id: nanoid(),
     img: 'pfizerpro.png',
@@ -86,8 +96,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'mibrance.png',
     title: 'Mibrance',
-    info:
-      "A cancer treatment companion app, enabling tracking of symptoms, doctor's appointments and medication reminders.",
+    info: "A cancer treatment companion app, enabling tracking of symptoms, doctor's appointments and medication reminders.",
     info2:
       'Features include a calendar, notifications, multi language support and graphical reporting of symptoms over time with the ability to export to PDF.',
     info3: 'Built using Ionic & Angular.',
@@ -98,8 +107,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'miguia.png',
     title: 'Mi Guia',
-    info:
-      'A cancer treatment companion app, enabling patients to track exercise, moods, doctors appointments and set reminders.',
+    info: 'A cancer treatment companion app, enabling patients to track exercise, moods, doctors appointments and set reminders.',
     info2: 'Built using Ionic & Angular.',
     url: 'https://play.google.com/store/apps/details?id=com.pfizer.ar.MiGuia',
     repo: '', // if no repo, the button will not show up
