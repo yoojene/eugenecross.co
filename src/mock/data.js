@@ -41,6 +41,15 @@ export const projectsData = [
   },
   {
     id: nanoid(),
+    img: 'aurena-seller.png',
+    title: 'Aurena Seller',
+    info: 'An app used to distribute auction lots to bidders.',
+    info2: 'Built using React, Ionic and Capacitor.',
+    url: 'https://apps.apple.com/gb/app/aurena-seller/id1615919609',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'rocketlawyer.png',
     title: 'Rocket Lawyer',
     info: 'Create legal documents & ask a question to a lawyer.',
