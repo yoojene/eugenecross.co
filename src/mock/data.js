@@ -34,7 +34,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'hostcomm-rva.png',
     title: 'Hostcomm Remote Visual Assistance',
-    info: 'A remote video insepection web application used on desktop and mobile devices.',
+    info: 'A remote video inspection web application used on desktop and mobile devices.',
     info2: 'Architected and built on the MERN stack using the Twilio SDK hosted on AWS.',
     url: 'https://www.hostcomm.co.uk/solutions/remote-visual-assistance',
     repo: '', // if no repo, the button will not show up
