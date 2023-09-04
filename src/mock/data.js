@@ -58,6 +58,15 @@ export const projectsData = [
     url: 'https://apps.apple.com/us/app/rocket-lawyer-easy-legal-help/id605512447',
     repo: '', // if no repo, the button will not show up
   },
+  {
+    id: nanoid(),
+    img: 'cantab.png',
+    title: 'Cambridge Cognition',
+    info: 'A chat interface app used to introduce study participants to cognitive tests',
+    info2: 'Built using React, Ionic and Capacitor',
+    url: 'https://apps.apple.com/gb/app/cantab/id1547171492',
+    repo: '', // if no repo, the button will not show up
+  },
 
   {
     id: nanoid(),
