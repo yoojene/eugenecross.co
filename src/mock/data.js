@@ -32,6 +32,17 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'loanzify.png',
+    title: 'LenderHomePage.com Loanzify',
+    info: 'An app for mortgage advisors to promote their services to clients, with partners and estate agents.',
+    info2:
+      'Improved the app UI and overall code quality, conversion to TypeScript, adding additional features and upgrading Ionic and Capacitor.',
+    info3: 'Built using React, Ionic, Capacitor',
+    url: 'https://apps.apple.com/us/app/loanzify/id897969937',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'hostcomm-rva.png',
     title: 'Hostcomm Remote Visual Assistance',
     info: 'A remote video inspection web application used on desktop and mobile devices.',
@@ -56,6 +67,17 @@ export const projectsData = [
     info2:
       'Reworked, refreshed and upgraded an Ionic 3 / Cordova app to Ionic 5 and increased the rating to 4+ stars',
     url: 'https://apps.apple.com/us/app/rocket-lawyer-easy-legal-help/id605512447',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'stridist.png',
+    title: 'Stridist',
+    info: 'Create and track workout plans for clients',
+    info2:
+      'Opened app to use by coaches as well as clients, streamlined build and store release process',
+    info3: 'Built using React & Capacitor',
+    url: 'https://apps.apple.com/gb/app/stridist-for-clients/id1550187702',
     repo: '', // if no repo, the button will not show up
   },
   {
