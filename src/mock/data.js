@@ -66,6 +66,7 @@ export const projectsData = [
     info: 'Create legal documents & ask a question to a lawyer.',
     info2:
       'Reworked, refreshed and upgraded an Ionic 3 / Cordova app to Ionic 5 and increased the rating to 4+ stars',
+    info3: 'Built using Angular, Ionic, Cordova, Firebase',
     url: 'https://apps.apple.com/us/app/rocket-lawyer-easy-legal-help/id605512447',
     repo: '', // if no repo, the button will not show up
   },
@@ -75,7 +76,7 @@ export const projectsData = [
     title: 'Stridist',
     info: 'Create and track workout plans for clients',
     info2:
-      'Opened app to use by coaches as well as clients, streamlined build and store release process',
+      'Opened app to enable used by coaches as well as clients, streamlined build and store release process',
     info3: 'Built using React & Capacitor',
     url: 'https://apps.apple.com/gb/app/stridist-for-clients/id1550187702',
     repo: '', // if no repo, the button will not show up
