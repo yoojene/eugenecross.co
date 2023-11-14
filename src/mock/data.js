@@ -76,7 +76,7 @@ export const projectsData = [
     title: 'Stridist',
     info: 'Create and track workout plans for clients',
     info2:
-      'Opened app to enable used by coaches as well as clients, streamlined build and store release process',
+      'Opened app to enable use by coaches as well as clients, streamlined build and store release process',
     info3: 'Built using React & Capacitor',
     url: 'https://apps.apple.com/gb/app/stridist-for-clients/id1550187702',
     repo: '', // if no repo, the button will not show up
