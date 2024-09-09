@@ -21,7 +21,7 @@ export const heroData = {
 export const aboutData = {
   img: 'me.jpg',
   paragraphOne:
-    "I'm a freelance web and mobile developer based in London, with over 15 years experience specialising in React, Angular, JavaScript, TypeScript, HTML, CSS and cross platform mobile frameworks like Ionic.",
+    "I'm a freelance web and mobile developer based in London, with over 15 years experience specialising in React, Angular, JavaScript, TypeScript, HTML, CSS and cross platform mobile frameworks like Ionic, React Native & Flutter.",
   paragraphTwo:
     "I've worked for small startups through to Fortune 500s and am always happy to collaborate with clients to discuss any requirements.",
   paragraphThree: '',
@@ -30,6 +30,17 @@ export const aboutData = {
 
 // PROJECTS DATA
 export const projectsData = [
+  {
+    id: nanoid(),
+    img: 'workwallet.png',
+    title: 'Work Wallet',
+    info: 'A Health & Safety, Asset and Workforce Management app.',
+    info2:
+      'Migration of the legacy Cordova app to the latest versions of Angular, Ionic and Capacitor, added new features and improved the overall code quality.',
+    info3: 'Built using Angular, Ionic, Capacitor',
+    url: 'https://apps.apple.com/gb/app/work-wallet/id1182378402',
+    repo: '', // if no repo, the button will not show up
+  },
   {
     id: nanoid(),
     img: 'loanzify.png',
