@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
+import Video from '../Video/Video';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -28,7 +29,7 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project) => {
-            const { title, info, info2, info3, url, repo, img, id } = project;
+            const { title, info, info2, info3, url, repo, img, id, videoUrl } = project;
 
             return (
               <Row key={id}>
@@ -72,7 +73,7 @@ const Projects = () => {
                     </div>
                   </Fade>
                 </Col>
-                <Col lg={8} sm={12}>
+                <Col lg={videoUrl ? 6 : 8} sm={12}>
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
@@ -108,6 +109,12 @@ const Projects = () => {
                     </div>
                   </Fade>
                 </Col>
+
+                {videoUrl && (
+                  <Col lg={2} sm={12} style={{ alignSelf: 'center' }}>
+                    <Video videoSrcURL={videoUrl} />
+                  </Col>
+                )}
               </Row>
             );
           })}

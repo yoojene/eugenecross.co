@@ -40,6 +40,7 @@ export const projectsData = [
     info3: 'Built using Angular, Ionic, Capacitor',
     url: 'https://apps.apple.com/gb/app/work-wallet/id1182378402',
     repo: '', // if no repo, the button will not show up
+    videoUrl: 'https://www.youtube.com/embed/6BDY4y7N32E?si=Ad8yHhhH5B9gd4NS',
   },
   {
     id: nanoid(),
@@ -51,6 +52,7 @@ export const projectsData = [
     info3: 'Built using React, Ionic, Capacitor',
     url: 'https://apps.apple.com/us/app/loanzify/id897969937',
     repo: '', // if no repo, the button will not show up
+    videoUrl: 'https://youtube.com/embed/XLfDyK_K84U',
   },
   {
     id: nanoid(),
@@ -60,6 +62,7 @@ export const projectsData = [
     info2: 'Architected and built on the MERN stack using the Twilio SDK hosted on AWS.',
     url: 'https://www.hostcomm.co.uk/solutions/remote-visual-assistance',
     repo: '', // if no repo, the button will not show up
+    videoUrl: '',
   },
   {
     id: nanoid(),
@@ -69,6 +72,7 @@ export const projectsData = [
     info2: 'Built using React, Ionic and Capacitor.',
     url: 'https://apps.apple.com/gb/app/aurena-seller/id1615919609',
     repo: '', // if no repo, the button will not show up
+    videoUrl: 'https://youtube.com/embed/Jp4Z5Ig2hJk',
   },
   {
     id: nanoid(),
@@ -80,6 +84,7 @@ export const projectsData = [
     info3: 'Built using Angular, Ionic, Cordova, Firebase',
     url: 'https://apps.apple.com/us/app/rocket-lawyer-easy-legal-help/id605512447',
     repo: '', // if no repo, the button will not show up
+    videoUrl: 'https://youtube.com/embed/tRJscF3HlkY',
   },
   {
     id: nanoid(),
@@ -91,6 +96,7 @@ export const projectsData = [
     info3: 'Built using React & Capacitor',
     url: 'https://apps.apple.com/gb/app/stridist-for-clients/id1550187702',
     repo: '', // if no repo, the button will not show up
+    videoUrl: '',
   },
   {
     id: nanoid(),
@@ -100,6 +106,7 @@ export const projectsData = [
     info2: 'Built using React, Ionic and Capacitor',
     url: 'https://apps.apple.com/gb/app/cantab/id1547171492',
     repo: '', // if no repo, the button will not show up
+    videoUrl: '',
   },
 
   {
@@ -111,6 +118,7 @@ export const projectsData = [
       'Implemented the My Account feature using standards based web components authored using StencilJS.',
     url: 'https://www.pfizerpro.com/',
     repo: '', // if no repo, the button will not show up
+    videoUrl: '',
   },
 
   {
@@ -121,6 +129,7 @@ export const projectsData = [
     info2: 'Built using React & Capacitor.',
     url: 'https://apps.apple.com/nl/app/brenger-voor-koeriers/id1504096160',
     repo: '', // if no repo, the button will not show up
+    videoUrl: '',
   },
   {
     id: nanoid(),
@@ -132,6 +141,7 @@ export const projectsData = [
     info3: 'Built using Ionic, Angular, Firebase.',
     url: 'https://www.availablebeauty.com/',
     repo: '', // if no repo, the button will not show up
+    videoUrl: '',
   },
   {
     id: nanoid(),
@@ -143,6 +153,7 @@ export const projectsData = [
     info3: 'Built using Ionic & Angular.',
     url: 'https://www.breakroom.com.au/',
     repo: '', // if no repo, the button will not show up
+    videoUrl: '',
   },
   {
     id: nanoid(),
@@ -154,6 +165,7 @@ export const projectsData = [
     info3: 'Built using Ionic & Angular.',
     url: 'https://apps.apple.com/be/app/mibrance/id1457076811',
     repo: '', // if no repo, the button will not show up
+    videoUrl: '',
   },
   {
     id: nanoid(),
@@ -163,6 +175,7 @@ export const projectsData = [
     info2: 'Built using Ionic & Angular.',
     url: 'https://play.google.com/store/apps/details?id=com.pfizer.ar.MiGuia',
     repo: '', // if no repo, the button will not show up
+    videoUrl: '',
   },
 ];
 
