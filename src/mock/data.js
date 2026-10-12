@@ -45,7 +45,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'dio.png',
     title: 'Defence Infrastructure Organisation, part of MoD',
-    info: 'Designed and implemented a GDS full stack application for DIO project management and budgeting',
+    info: 'Designed and implemented a GDS full-stack application for DIO project management and budgeting',
     info3: 'Built using React, NextJS, Express',
     url: 'https://www.gov.uk/government/organisations/defence-infrastructure-organisation',
     repo: '', // if no repo, the button will not show up
