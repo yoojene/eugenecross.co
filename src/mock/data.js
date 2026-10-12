@@ -34,7 +34,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'connect-x.png',
     title: 'Connect-X',
-    info: 'An app connecting and operating with an marine environment VHF radio with wearable companion apps on WearOS and WatchOS',
+    info: 'An app connecting and operating with a marine environment VHF radio with wearable companion apps on WearOS and WatchOS',
     info2: 'Refactored, released the first versions and improved the app and wearables',
     info3: 'Built using Vue, Capacitor, Swift, Java, Kotlin',
     url: 'https://apps.apple.com/gb/app/connect-x/id6670794101',
