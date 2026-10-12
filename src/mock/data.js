@@ -32,6 +32,27 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'connect-x.png',
+    title: 'Connect-X',
+    info: 'An app connecting and operating with an marine environment VHF radio with wearable companion apps on WearOS and WatchOS',
+    info2: 'Refactored, released the first versions and improved the app and wearables',
+    info3: 'Built using Vue, Capacitor, Swift, Java, Kotlin',
+    url: 'https://apps.apple.com/gb/app/connect-x/id6670794101',
+    repo: '', // if no repo, the button will not show up
+    // videoUrl: 'https://www.youtube.com/embed/6BDY4y7N32E?si=Ad8yHhhH5B9gd4NS',
+  },
+  {
+    id: nanoid(),
+    img: 'dio.png',
+    title: 'Defence Infrastructure Organisation, part of MoD',
+    info: 'Designed and implemented a GDS full stack application for DIO project management and budgeting',
+    info3: 'Built using React, NextJS, Express',
+    url: 'https://www.gov.uk/government/organisations/defence-infrastructure-organisation',
+    repo: '', // if no repo, the button will not show up
+    // videoUrl: 'https://www.youtube.com/embed/6BDY4y7N32E?si=Ad8yHhhH5B9gd4NS',
+  },
+  {
+    id: nanoid(),
     img: 'workwallet.png',
     title: 'Work Wallet',
     info: 'A Health & Safety, Asset and Workforce Management app.',
