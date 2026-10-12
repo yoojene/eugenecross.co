@@ -37,7 +37,8 @@
     "react-helmet": "^6.1.0",
     "react-scroll": "^1.7.16",
     "react-tilt": "^1.0.2",
-    "sass": "^1.93.2"
+    "sass": "^1.93.2",
+    "@emotion/react": "11.14.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
