@@ -33,10 +33,10 @@ You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/downl
 Also you need to have installed [Gatsby CLI](https://www.gatsbyjs.org/docs/quick-start/)
 
 ```
-node@v10.16.0 or higher
-npm@6.9.0 or higher
+node@v22.x (LTS recommended)
+npm@10.x or higher
 git@2.17.1 or higher
-gatsby-cli@2.8.22 or higher
+gatsby-cli@5.x or higher
 ```
 
 Also, you can use [Yarn](https://yarnpkg.com/) instead of NPM ☝️
@@ -273,3 +273,7 @@ I was motivated to create this project because I wanted to contribute on somethi
 nvm use
 npm i
 ```
+
+#### Node.js version
+
+This project is configured for modern Node with an engines range of `>=20 <26` and defaults to Node `v22` via [`.nvmrc`](./.nvmrc).
